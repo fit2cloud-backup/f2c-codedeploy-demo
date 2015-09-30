@@ -3,7 +3,7 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.fit2cloud.aliyun</groupId>
+	<groupId>com.fit2cloud.example</groupId>
 	<artifactId>f2c-demo-app</artifactId>
 	<packaging>pom</packaging>
 	<version>0.1</version>
@@ -41,23 +41,22 @@
 	<distributionManagement>
 		<!-- Publish the versioned releases here -->
 		<repository>
-			<id>fit2cloud</id>
-			<name>fit2cloud</name>
-			<url>http://repository.fit2cloud.com/content/repositories/fit2cloud/</url>
+			<id>fit2cloud-example</id>
+			<name>Fit2Cloud Example Release</name>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/releases/</url>
 		</repository>
-	        <snapshotRepository>
-	                <id>fit2cloud-snapshots</id>
-                        <name>fit2cloud-snapshots</name>
-	                <url>http://repository.fit2cloud.com/content/repositories/fit2cloud-snapshots</url>
-	        </snapshotRepository>			
+		<snapshotRepository>
+			<id>fit2cloud-example</id>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/snapshots/</url>
+		</snapshotRepository>			
 	</distributionManagement>
 
 	<!-- download artifacts from this repo -->
 	<repositories>
 		<repository>
-			<id>fit2cloud</id>
-			<name>fit2cloud</name>
-			<url>http://repository.fit2cloud.com/content/groups/public/</url>
+			<id>fit2cloud-public</id>
+			<name>Fit2Cloud Public Repository</name>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -70,9 +69,9 @@
 	<!-- download plugins from this repo -->
 	<pluginRepositories>
 		<pluginRepository>
-			<id>fit2cloud</id>
-			<name>fit2cloud</name>
-			<url>http://repository.fit2cloud.com/content/groups/public/</url>
+			<id>fit2cloud-public</id>
+			<name>Fit2Cloud Public Repository</name>
+			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
