@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.fit2cloud.example</groupId>
-	<artifactId>f2c-demo-app</artifactId>
+	<artifactId>ci-demo-app</artifactId>
 	<packaging>pom</packaging>
 	<version>0.1</version>
 	<name>Fit2Cloud demo app</name>
@@ -23,7 +23,7 @@
 					<descriptors>
 						<descriptor>assembly.xml</descriptor>
 					</descriptors>
-					<finalName>f2c-demo-${project.version}</finalName>
+					<finalName>${project.artifactId}-${project.version}</finalName>
 				</configuration>
 				<executions>
 					<execution>
