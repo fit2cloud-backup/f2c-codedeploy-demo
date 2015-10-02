@@ -4,4 +4,5 @@
 mvn package
 
 #call osscmd to upload to OSS
-/usr/bin/osscmd put target/f2c-demo-0.1-source.zip oss://f2c-repo-pub/f2c-sample-apps/0.1/f2c-demo-0.1-source.zip
+version-`grep version pom.xml | head -n 1 | awk -F">" '{print $2}' | awk -F"<" '{print $1}'`
+/usr/bin/osscmd put target/f2c-demo-0.1-source.zip oss://f2c-repo-pub/f2c-sample-apps/$version/f2c-demo-$version-source.zip
