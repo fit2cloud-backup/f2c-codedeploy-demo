@@ -6,8 +6,8 @@
 	<groupId>com.fit2cloud.example</groupId>
 	<artifactId>ci-demo-app</artifactId>
 	<packaging>pom</packaging>
-	<version>0.2</version>
-	<name>Fit2Cloud demo app</name>
+	<version>1.0</version>
+	<name>Fit2Cloud CodeDeploy Demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
