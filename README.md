@@ -1,7 +1,8 @@
 # f2c-codedeploy-demo
 本项目是FIT2CLOUD代码部署示例项目，您可以参考本项目中的文件来配置您的工程，以使用FIT2CLOUD的代码部署功能。
 
-文件说明：  
+###文件说明：  
+
 **pom.xml**：Maven的Pom文件。
 
 **assembly.xml**：定义打包zip包时包含的文件。   
