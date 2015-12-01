@@ -2,9 +2,9 @@ version: 4.2
 os: linux
 files:
   - source: /
-    destination: /opt/fit2cloud-demo
+    destination: /data/app/app.templateapiserver1.0.1/
 permissions:
-  - object: /opt/fit2cloud-demo/
+  - object: /data/app/app.templateapiserver1.0.1/
     owner: admin
     group: admin
     mode: 755
@@ -20,7 +20,7 @@ hooks:
   AfterInstall:
     - location: scripts/configure.sh
       timeout: 300
-      runas: root
+      runas: admin
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
@@ -28,4 +28,4 @@ hooks:
   ValidateService:
     - location: scripts/validate_service.sh
       timeout: 300
-      runas: root
+      runas: admin

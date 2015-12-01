@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.fit2cloud.example</groupId>
-	<artifactId>ci-demo-app</artifactId>
+	<artifactId>templateapiserver</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
-	<name>Fit2Cloud CodeDeploy Demo</name>
+	<name>templateapiserver Demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
