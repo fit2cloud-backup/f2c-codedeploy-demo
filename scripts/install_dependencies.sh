@@ -2,5 +2,8 @@
 
 echo install dependencies
 mkdir -p /data/app/app.templateapiserver1.0.1/
-useradd admin 
-groupadd admin
+count=`grep "^admin" /etc/passwd | wc -l`
+if [ "$count" == "0" ];then
+  useradd admin 
+  groupadd admin
+fi
