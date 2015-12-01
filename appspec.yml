@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /
     destination: /opt/fit2cloud-demo
+permissions:
+  - object: /opt/fit2cloud-demo/
+    owner: admin
+    group: admin
+    mode: 755
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
