@@ -3,11 +3,6 @@ os: linux
 files:
   - source: /
     destination: /opt/fit2cloud-demo
-permissions:
-  - object: /opt/fit2cloud-demo/
-    owner: admin
-    group: admin
-    mode: 755
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
@@ -24,7 +19,7 @@ hooks:
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
-      runas: admin
+      runas: root
   ValidateService:
     - location: scripts/validate_service.sh
       timeout: 300
