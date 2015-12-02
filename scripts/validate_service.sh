@@ -1,3 +1,2 @@
 #!/bin/bash
-echo validate deployment
-exit 0
+echo validate deployment successfully!
