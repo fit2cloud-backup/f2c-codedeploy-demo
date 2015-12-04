@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo install dependencies
-mkdir /opt/fit2cloud-demo
+mkdir -p /opt/fit2cloud-demo
