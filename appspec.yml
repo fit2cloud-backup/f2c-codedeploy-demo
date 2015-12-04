@@ -2,7 +2,7 @@ version: 4.2
 os: linux
 files:
   - source: /
-    destination: /opt/fit2cloud-demo
+    destination: /opt/fit2cloud-demo/
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
