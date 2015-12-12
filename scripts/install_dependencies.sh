@@ -6,3 +6,4 @@ count=`grep "^admin" /etc/passwd | wc -l`
 if [ "$count" == "0" ];then
   useradd admin 
 fi
+exit 1
