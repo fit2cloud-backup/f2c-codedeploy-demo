@@ -6,3 +6,4 @@ if [ -d /opt/fit2cloud-demo ];then
 else
     mkdir -p /opt/fit2cloud-demo
 fi
+echo install dependencies done!
