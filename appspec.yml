@@ -1,8 +1,12 @@
 version: 4.2
 os: linux
 files:
-  - source: /
-    destination: /opt/fit2cloud-demo/
+  - source: /ios/tongshiwo_*.ipa
+    destination: /home/ubuntu/tongshiwo/appupdate
+  - source: /ios/tongshiwoplist.plist
+    destination: /home/ubuntu/tongshiwo/appupdate
+  - source: /ios/www.zip
+    destination: /usr/share/tomcat8-codedeploy/webapps/
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
