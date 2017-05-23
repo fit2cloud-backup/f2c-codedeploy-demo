@@ -3,11 +3,11 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.fit2cloud.qatest</groupId>
-	<artifactId>tao-demo-app</artifactId>
+	<groupId>com.fit2cloud.example</groupId>
+	<artifactId>ci-demo-app</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
-	<name>Fit2Cloud CodeDeploy QA test</name>
+	<name>Fit2Cloud CodeDeploy Demo</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
