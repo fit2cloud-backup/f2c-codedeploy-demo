@@ -3,11 +3,11 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.fit2cloud.example</groupId>
-	<artifactId>ci-demo-app</artifactId>
+	<groupId>com.fit2cloud.qatest</groupId>
+	<artifactId>tao-demo-app</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0</version>
-	<name>Fit2Cloud CodeDeploy Demo</name>
+	<name>Fit2Cloud CodeDeploy QA test</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,11 +43,11 @@
 		<repository>
 			<id>fit2cloud-example</id>
 			<name>Fit2Cloud Example Release</name>
-			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/releases/</url>
+			<url>http://repository.fit2cloud.com/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>fit2cloud-example</id>
-			<url>http://repository-proxy.fit2cloud.com:8080/content/repositories/snapshots/</url>
+			<url>http://repository.fit2cloud.com/content/repositories/snapshots/</url>
 		</snapshotRepository>			
 	</distributionManagement>
 
@@ -56,7 +56,7 @@
 		<repository>
 			<id>fit2cloud-public</id>
 			<name>Fit2Cloud Public Repository</name>
-			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
+			<url>http://repository.fit2cloud.com/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -71,7 +71,7 @@
 		<pluginRepository>
 			<id>fit2cloud-public</id>
 			<name>Fit2Cloud Public Repository</name>
-			<url>http://repository-proxy.fit2cloud.com:8080/content/groups/public/</url>
+			<url>http://repository.fit2cloud.com/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
